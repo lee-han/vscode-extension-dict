@@ -2,13 +2,14 @@
   "name": "hanhub-dict",
   "displayName": "한국학 공구서",
   "description": "동양연표 + 한국학 웹 사전 (한어대사전, 이두, 한의학 용어 등)",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "publisher": "KoreanStudiesTool",
   "repository": {
     "type": "git",
     "url": "https://github.com/lee-han/vscode-extension-dict"
   },
   "license": "MIT",
+  "icon": "resources/icon128.png",
   "engines": {
     "vscode": "^1.74.0"
   },
