@@ -1,0 +1,62 @@
+{
+  "name": "hanhub-dict",
+  "displayName": "한국학 공구서",
+  "description": "동양연표 + 한국학 웹 사전 (한어대사전, 이두, 한의학 용어 등)",
+  "version": "1.0.1",
+  "publisher": "KoreanStudiesTool",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lee-han/vscode-extension-dict"
+  },
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "hanhub-sidebar",
+          "title": "한국학 공구서",
+          "icon": "resources/icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "hanhub-sidebar": [
+        {
+          "type": "webview",
+          "id": "hanhub.dictView",
+          "name": "한국학 공구서"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "hanhub.openDict",
+        "title": "한국학 웹 사전 열기"
+      },
+      {
+        "command": "hanhub.openChronology",
+        "title": "동양연표 열기"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "@types/vscode": "^1.74.0",
+    "typescript": "^5.0.0",
+    "@vscode/vsce": "^2.22.0"
+  }
+}

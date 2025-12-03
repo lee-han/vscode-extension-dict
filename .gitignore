@@ -1,0 +1,22 @@
+# 빌드 출력
+out/
+dist/
+
+# 의존성
+node_modules/
+
+# 패키징
+*.vsix
+
+# 로그
+*.log
+npm-debug.log*
+
+# 테스트
+.vscode-test/
+
+### 맥 ###
+.DS_Store
+._.DS_Store
+**/.DS_Store
+**/._.DS_Store
