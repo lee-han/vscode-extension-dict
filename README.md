@@ -19,53 +19,6 @@ Activity Bar에서 한국학 공구서(동양연표, 한국학 웹 사전)를 �
 1. 설치 후 왼쪽 Activity Bar에서 **漢** 아이콘 클릭
 2. 사이드바에서 탭을 클릭하여 한국학 웹 사전 / 동양연표 전환
 
-## 개발
-
-### 로컬 실행
-
-```bash
-# 의존성 설치
-npm install
-
-# 컴파일
-npm run compile
-
-# VS Code에서 F5를 눌러 디버그 모드로 실행
-```
-
-### 빌드
-
-```bash
-# VSIX 패키지 생성
-npm run package
-```
-
-### 배포
-
-#### 1. Publisher 생성
-
-https://marketplace.visualstudio.com/manage 에서 Publisher 생성
-
-#### 2. Personal Access Token (PAT) 발급
-
-1. https://dev.azure.com 접속 (조직이 없으면 먼저 생성)
-2. User Settings > Personal access tokens > New Token
-3. 설정:
-   - Organization: `All accessible organizations`
-   - Scopes: `Show all scopes` > Marketplace > `Manage` 체크
-
-#### 3. 로그인 및 배포
-
-```bash
-# 로그인 (토큰 입력)
-npx vsce login <publisher-id>
-
-# 배포
-npx vsce publish
-```
-
-버전 업데이트 시 `package.json`의 `version` 값을 변경 후 재배포
-
 ## 요구사항
 
 - VS Code 1.74.0 이상

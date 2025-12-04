@@ -56,6 +56,11 @@ jobs:
       - name: Build VSIX
         run: npx vsce package
 
+      - name: Publish to Marketplace
+        run: npx vsce publish
+        env:
+          VSCE_PAT: ${{ secrets.VSCE_PAT }}
+
       - name: Create Release
         uses: softprops/action-gh-release@v2
         with:
