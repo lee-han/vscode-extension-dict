@@ -1,6 +1,6 @@
 # 한국학 공구서 - VSCode Extension
 
-VSCode 사이드바에서 한국학 공구서(동양연표, 한국학 웹 사전)를 바로 사용할 수 있는 익스텐션입니다.
+Activity Bar에서 한국학 공구서(동양연표, 한국학 웹 사전)를 바로 사용할 수 있는 익스텐션입니다.
 
 ## 기능
 
@@ -9,16 +9,10 @@ VSCode 사이드바에서 한국학 공구서(동양연표, 한국학 웹 사전
 
 ## 설치 방법
 
-### Marketplace에서 설치 (권장)
+### Marketplace에서 설치
 
 1. VS Code 확장 탭에서 `한국학 공구서` 검색
 2. 또는 [Marketplace 페이지](https://marketplace.visualstudio.com/items?itemName=KoreanStudiesTool.hanhub-dict)에서 설치
-
-### VSIX 파일로 설치
-
-1. [Releases](https://github.com/lee-han/vscode-extension-dict/releases)에서 `.vsix` 파일 다운로드
-2. VS Code에서 `Ctrl+Shift+P` (Mac: `Cmd+Shift+P`) > `Extensions: Install from VSIX...`
-3. 다운로드한 `.vsix` 파일 선택
 
 ## 사용법
 
